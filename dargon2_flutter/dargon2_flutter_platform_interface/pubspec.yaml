@@ -12,7 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   plugin_platform_interface: '^2.0.0'
-  dargon2_interface: '^1.1.0'
+  dargon2_interface:
+    path: ../../dargon2_interface
 
 dev_dependencies:
   flutter_test:

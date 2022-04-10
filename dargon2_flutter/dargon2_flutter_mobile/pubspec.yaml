@@ -11,9 +11,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dargon2_core: '^2.1.0'
-  dargon2_flutter_platform_interface: '^3.1.0'
-  dargon2_interface: '^1.1.0'
+  dargon2_core:
+    path: ../../dargon2_core
+  dargon2_flutter_platform_interface:
+    path: ../dargon2_flutter_platform_interface
+  dargon2_interface:
+    path: ../../dargon2_interface
 
 dev_dependencies:
   flutter_test:

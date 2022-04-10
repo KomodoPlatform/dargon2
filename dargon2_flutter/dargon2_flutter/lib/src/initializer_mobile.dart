@@ -6,9 +6,9 @@
 import 'dart:io';
 
 import 'package:dargon2_flutter_mobile/dargon2_flutter_mobile.dart';
-import 'package:dargon2_flutter_desktop/dargon2_flutter_desktop.dart';
 import 'package:dargon2_flutter_platform_interface/dargon2_flutter_platform.dart';
 
-void initialize() => Platform.isAndroid || Platform.isIOS
-    ? DArgon2Platform.instance = DArgon2Mobile()
-    : DArgon2Platform.instance = DArgon2Desktop();
+void initialize() {
+  if (Platform.isAndroid || Platform.isIOS)
+    DArgon2Platform.instance = DArgon2Mobile();
+}
